@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Expense detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <div class="main-section">
+       <div class="main-flex">
+        <div class="sub-flex-1">
+        <select  class="sub-flex flex1" name="" id="myList">
+            <option class="selection" selected disabled>Select</option>
+            <option class="income-val" value="inc" >+</option>
+            <option class="exp-val" value="exp">-</option>
+
+        </select>
+        </div>
+        <div class="sub-flex-2">
+            <input class="sub-flex flex2" id="myText" type="text" placeholder="Description..">
+            
+        </div>
+        <div class="sub-flex-3" >
+            <input class="sub-flex flex3" id="amount" type="number" placeholder="Amount">
+
+        </div>
+        <div class="sub-flex-4">
+            <button class="sub-flex add-btn" id="buttonadd">Add</button> 
+        </div>
+        
+       </div>
+   </div>
+   <br>
+   <br>
+   <div class="section-2">
+       <div class="section-2-flex">
+           <div class="all-incomes">
+               <h1 class="all-income-h1">ALL INCOMES</h1>
+               <div id="income-des">
+
+               </div>
+           </div>
+           <div class="progress">
+               <div class="tot-income">
+                    <h2>INCOME</h2>
+                    <h3 id="income" class="income">0</h3>
+               </div>
+               <div class="tot-moneyleft">
+                <h2>MONEY LEFT</h2>
+                <div class="moneyleft">0</div>
+           </div>
+           <div class="tot-expenses">
+            <h2>EXPENSES</h2>
+            <div class="expenses">0</div>
+       </div>
+           
+       </div>
+       <div class="all-expenses">
+           <h1 class="all-expenses-h1">ALL EXPENSES</h1>
+           <div id="expenses-des">
+
+           </div>
+       </div>
+   </div>
+   <script src="index.js"></script>
+  </body>
+</html>
